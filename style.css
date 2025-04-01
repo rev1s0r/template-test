@@ -1,7 +1,35 @@
+@import url('https://fonts.googleapis.com/css2?family=Winky+Sans:ital,wght@0,300..900;1,300..900&display=swap');
 html {
     box-sizing: border-box;
 }
 body {
     margin: 0;
-    min-height: 100vh;
+    font-family: Winky Sans, sans-serif;
+    background-color: whitesmoke;
 }
+h1 {
+    text-transform: uppercase;
+    text-align: center;
+    letter-spacing: 5px;
+    font-size: 48px;
+}
+.loader {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgba(255, 255, 255, .8);
+  }
+  .image-container {
+    margin: 10px 30%;
+  }
+  .image-container img {
+    width: 100%;
+  }
+  
+  
+  @keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+  }
